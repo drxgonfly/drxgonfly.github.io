@@ -1,0 +1,222 @@
+*{
+    margin:0 auto;
+    font-family:quicksand;
+    color:white;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration:none;
+}
+
+body{
+background-image:url("https://cdn.rawgit.com/drxgonfly/93ebe8a9edf0744aeb9e94f1425d18dc/raw/c80be10125d5b52146458ccb28f875a81db61e67/purplebg.svg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    
+    
+}
+
+img{
+    max-width:100%;
+}
+
+.waves{
+    position:fixed;
+    bottom:0;
+    width:100vw;
+    z-index:-1;
+    display:none;
+
+} /*perfect*/
+
+.navigation{
+height:25px;
+padding-top:20px;
+margin-right:20px;
+} /*perfect*/
+
+.navigation li{
+float:right;
+text-align:right;
+display:inline;
+line-height:25px;
+padding:0 10px;
+font-size:12px
+} /*perfect*/
+
+/*************************************************** 
+                    HOME PAGE
+***************************************************/
+
+h1 {
+text-align:left;
+margin-top:200px;
+font-family:quicksand;
+text-transform:uppercase;
+font-size:75px;;
+font-weight:100;
+width:100%;
+text-align:center;
+}
+
+.line{
+margin:40px 0px;
+width:100vw;
+height:5px;
+background: #f7318d; /* Old browsers */
+background: -moz-linear-gradient(left, #f7318d 0%, #46067f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #f7318d 0%,#46067f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #f7318d 0%,#46067f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7318d', endColorstr='#46067f',GradientType=1 ); /* IE6-9 */
+}
+
+.button{
+text-align:center;
+width:220px;
+height:50px;
+line-height:48px;
+font-size:20px;
+border:2px solid rgba(255,255,255,1);
+border-radius: 30px;
+transition:ease-in-out.6s;
+}
+
+.button :hover{
+background-color: #f7318d; /* Old browsers */
+background: -moz-linear-gradient(left, #f7318d 0%, #46067f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #f7318d 0%,#46067f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #f7318d 0%,#46067f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7318d', endColorstr='#46067f',GradientType=1 ); /* IE6-9 */
+border-radius:30px;
+width:216px;
+height:46px;
+transition:ease-in-out.3s;
+
+
+
+}
+    
+.dragonflylogo{
+    float:right;
+    width:400px;
+    height:400px;
+    display:none;
+    
+}
+/*************************************************** 
+                    GALLERY
+***************************************************/
+.gallerycontainer {
+margin:80px;
+}
+
+.responsive {
+    float: left;
+    width:25%;
+    padding:10px;
+}
+
+.post {
+    width: 100%;
+    height: auto;
+}
+
+
+/*************************************************** 
+                    ABOUT
+***************************************************/
+.about{
+    margin:80px;
+    padding:50px;
+    font-size:20px;
+    color:white;
+    text-align:center;
+    background-color:rgba(255,255,255,.1);
+    height:100vh; 
+}
+
+.about h2{
+    font-size:50px;
+}
+
+.about p{
+    margin-top:50px;
+    line-height:30px;
+}
+
+/*************************************************** 
+                    RESPONSIVE
+***************************************************/
+@media only screen and (min-width:0px){
+    .responsive{
+        width:100%;
+        padding:20px 50px;
+    }
+    
+    .gallerycontainer{
+        margin:10px;
+    }
+}
+
+@media only screen and (min-width:500px){
+    .responsive{
+        width:50%;
+        padding:20px;
+    }
+    
+    .gallerycontainer{
+        margin:10px;
+    }
+}
+
+@media only screen and (min-width:720px){
+    .responsive{
+        width:50%;
+        padding:40px;
+    }
+    
+    .gallerycontainer{
+        margin:30px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .responsive{
+        width:33.3%;
+        padding:30px;
+    }
+    
+    .gallerycontainer{
+        margin:50px;
+    }
+}
+
+@media only screen and (min-width:1355px){
+    .responsive{
+        width:25%;
+        padding:20px;
+    }
+    
+    .gallerycontainer{
+        margin:80px;
+    }
+    
+    .waves{
+        width:100%;
+    }
+}
+
+@media only screen and (min-width:1700px){
+    .responsive{
+        width:25%;
+        padding:50px;
+    }
+    
+    .gallerycontainer{
+        margin:150px;
+    }
+}
